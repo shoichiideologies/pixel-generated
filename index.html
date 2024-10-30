@@ -2,10 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Pixel Generated</title>
 </head>
 <body>
-    <p>HELLO</p>
+    <div class="main-container">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img id="navlogo" src="images/logos/pixel-generated-logo.png" alt="Pixel Generated" title="Pixel Generated">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="nav-login">
+                <button id="navbutton">Login</button>
+                <button id="navmenu"><img id="menuicon" src="images/icons/menu-icon.png" alt="Menu" title="Menu"></button>
+            </div>
+            <div id="menulist">
+                <div class="top">
+                    <img id="navlogo" src="images/logos/pixel-generated-logo.png" alt="Pixel Generated" title="Pixel Generated">
+                    <button class="close-button"><img src="images/icons/close-icon.png" alt="Close" title="Close"></button>
+                </div>
+                <ul class="mid">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div class="bottom">
+                    <label for="navbutton">Login</label>
+                    <button id="navtopbutton">Get Started</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
