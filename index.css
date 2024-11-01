@@ -3,9 +3,33 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    font: 1em/1em inter;
+    font-family: Inter;
     position: relative;
+}
+
+@font-face {
+    font-family: 'Vremena Grotesk Bold'; /* Font name */
+    src: url('fonts/Desktop-Vremena Grotesk/Fonts/vremenagroteskbold.otf') format('opentype'), /* OTF format */
+         url('fonts/mycustomfont.ttf') format('truetype'); /* Example TTF path */
+    font-weight: bold; /* Use bold for this variant */
+    font-style: normal; /* Style can be normal or italic */
+}
+
+@font-face {
+    font-family: 'Vremena Grotesk';
+    src: url('fonts/Desktop-Vremena Grotesk/Fonts/vremenagrotesk.otf') format('opentype'); /* Add regular version */
+    font-weight: normal; /* Normal weight */
+    font-style: normal; /* Normal style */
+}
+
+@font-face {
+    font-family: 'Vremena Grotesk Medium';
+    src: url('fonts/Desktop-Vremena Grotesk/Fonts/vremenagroteskmedium.otf') format('opentype'); /* Add regular version */
+    font-weight: 100; /* Normal weight */
+    font-style: normal; /* Normal style */
 }
 
 /*----------NAVIGATION BAR----------*/
@@ -15,7 +39,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: yellowgreen;
 }
 
 .nav-logo {
@@ -163,16 +186,181 @@ label {
 
 /*----------HEADER----------*/
 
+.header-container{
+    width: 100%;
+    padding: 0px 40px;
+    height: 500px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span{
+    font-size: 3.5em;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    word-spacing: normal;
+    font-family: "Vremena Grotesk", sans-serif;
+    letter-spacing: -1px;
+}
+
+.header-description{
+    width: 100%;
+    font-family: inter;
+    font-size: 1.3em;
+    align-items: center;
+    text-align: center;
+    color: rgb(107, 114, 128);
+}
+
+/*----------MAIN---------*/
+
+.main-container{
+    width: 100%;
+}
+
+/*----------TUTORIAL TRANSACTION---------*/
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+}
+
+.main-tutorial{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 600px;
+}
+
+.steps{
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+.step-number{
+    width: 50px;
+    height: 50px;
+    margin: 25px 0px;
+    border-radius: 25px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-description{
+    width: 70%;
+    align-self: center;
+}
+
+/*----------CUSTOMER REVIEWS---------*/
+
+
+.main-reviews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 70px;
+    gap: 25px;
+    margin-bottom: 200px;
+}
+
+.testimonial-container{
+   width: 100%;
+   display: flex;
+   height: auto;
+   gap: 25px;
+}
+
+.testimonial{
+    background-color: #f9fafb;
+    width: 33.33%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.p-testimonial{
+    width: 100%;
+    padding: 0;
+    margin: 10px 0px;
+    font-size: 0.8em;
+}
+
+.who-testimonial{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-testimonial{
+    width: 40px;
+    margin: 10px 10px 0px 0px;
+}
+
+.img-testimonial img{
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+}
+
+.name-testimonial{
+    font-weight: 600;
+}
+
+/*----------FAQs----------*/
+
+.main-faqs{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+}
+
+.p-faqs{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/*----------TEAM----------*/
+
+.main-team{
+    
+}
 
 /*----------MEDIA QUERIES----------*/
 
 @media screen and (max-width: 920px) {
+
+    /*----------NAV----------*/
     .nav-links {
-        display: none; /* Hide nav links */
+        display: none; 
     }
 
     #navmenu {
-        display: block; /* Show menu icon */
+        display: block; 
         width: 50px;
         background-color: white;
         border: none;
@@ -196,5 +384,24 @@ label {
 
     #navbutton {
         display: none; 
+    }
+
+    /*----------HEADER----------*/
+
+    span{
+        font-size: 2em;
+    }
+
+    .header-description{
+        font-size: 0.9em;
+    }
+
+    /*----------MAIN----------*/
+    .testimonial-container{
+        flex-direction: column;
+    }
+    
+    .testimonial{
+        width: 100%;
     }
 }
