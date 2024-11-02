@@ -326,7 +326,7 @@ span{
 
 .main-faqs{
     width: 100%;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -347,8 +347,69 @@ span{
 /*----------TEAM----------*/
 
 .main-team{
-    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
 }
+
+.team-container{
+    display: flex;
+    margin: auto;
+}
+
+.teams{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px 0px;
+}
+
+.team-member{
+    display: flex;
+    gap: 25px;
+}
+
+.team-member-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+}
+
+.team-member-profile img{
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+    object-fit: fill;
+}
+
+.team-member-credentials{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-name{
+    font-weight: 600;
+}
+
+.team-member-position{
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+}
+
+.team-member-socials{
+    font-size: 0.9em;
+    color: rgb(132, 132, 132);
+}
+
+.team-member-credentials p{
+    margin: 0;
+    padding: 0;
+}
+
 
 /*----------MEDIA QUERIES----------*/
 
